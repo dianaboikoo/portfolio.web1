@@ -160,11 +160,40 @@ nav a:hover{ text-decoration: underline; }
 }
 
 
-@media (min-width: 375px){
-  .arrow { width: 100px; }
+@media (min-width: 375px) and (max-width: 767px){
+  .arrow { 
+    width: 100px;
+  }
+  .title{ 
+    line-height: 1.05;
+     text-align:center; 
+  }
+  .title .word{
+    font-size: clamp(40px, 14vw, 64px);
+    margin-bottom: 10px;
+  }
+  .title .name{
+    margin-top: 6px;
+    font-size: clamp(20px, 5vw, 28px);
+    text-align: center;
+  }
+  .tagline{ 
+    padding-left: 0;
+  }
+    .projects{
+    justify-content: center;
+    gap: 24px;
+    padding-top: 40px;
+  }
+  .card{
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+  .tech-tags{ width: 100%; }
 }
 
-@media (max-width: 767px){
+
+@media (min-width: 768px) and (max-width: 1023px){
   .projects{
     justify-content: center;
     gap: 24px;
